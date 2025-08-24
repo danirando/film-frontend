@@ -1,0 +1,26 @@
+section.hero {
+    background-image: url(./assets/hero.png);
+    background-size: cover;
+}
+
+.card-img-top {
+    display: block;
+    /* elimina eventuali spazi bianchi */
+    width: 100%;
+    /* occupa tutta la larghezza */
+    height: auto;
+    /* lascia l’altezza proporzionata */
+    object-fit: contain;
+    /* mostra tutta l’immagine, nessun taglio */
+    margin-top: 0;
+    /* assicura zero margine */
+    border-top-left-radius: 0.375rem;
+    /* stesso raggio card */
+    border-top-right-radius: 0.375rem;
+}
+
+.bg-text {
+    background-color: rgba(128, 128, 128, 0.705);
+    border-radius: 20px;
+
+}

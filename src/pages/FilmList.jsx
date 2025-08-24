@@ -21,10 +21,14 @@ const FilmList = () => {
       </header>
 
       {/* Hero section full width */}
-      <section className="bg-primary text-white text-center py-5 mb-5 w-100">
+      <section className="bg-primary text-white text-center py-5 mb-5 w-100 hero">
         <div className="container">
-          <h2 className="display-4">Benvenuto su CineApp</h2>
+          <div className="bg-text">
+
+<h2 className="display-4">Benvenuto su CineApp</h2>
           <p className="lead">Scopri i migliori film della tua collezione!</p>
+          </div>
+          
         </div>
       </section>
 
@@ -39,7 +43,7 @@ const FilmList = () => {
                     src={film.poster.startsWith('http') ? film.poster : `http://127.0.0.1:8000/storage/${film.poster}`}
                     className="card-img-top"
                     alt={film.title}
-                    style={{ objectFit: 'cover', height: '300px' }}
+                   
                   />
                 )}
                 <div className="card-body d-flex flex-column">
